@@ -1,0 +1,36 @@
+{
+  "name": "private",
+  "version": "1.0.0",
+  "description": "backend",
+  "main": "index.js",
+  "author": "Mohsin Rana",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "heroku-deploy": "git add . && git commit -m 'ver0.3' && git push heroku main",
+    "git-deploy": "git add . && git commit -m 'ver0.3' && git push",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.7",
+    "aws-sdk": "^2.1017.0",
+    "axios": "^0.21.4",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.8",
+    "nanoid": "^3.1.28",
+    "nodemon": "^2.0.13",
+    "socket.io": "^4.4.0",
+    "stripe": "^8.195.0",
+    "twilio": "^3.68.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.3.1"
+  }
+}
